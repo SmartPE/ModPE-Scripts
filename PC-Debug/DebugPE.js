@@ -116,7 +116,7 @@ function modTick()
 	textPosition.setText("XYZ: " + Player.getX() + " / " + Player.getY() + " / " + Player.getZ());
 	textPosition2.setText("Block: " + Math.round(Player.getX()) + " / " + Math.round(Player.getY()) + " / " + Math.round(Player.getZ()));
 	textChunk2.setText("Chunk: " + Math.floor(Math.round(Player.getX())/16) + " / " + Math.floor(Math.round(Player.getY())/16) + " / " + Math.floor(Math.round(Player.getZ())/16));
-	textFacing.setText("Facing: " + Compass + " (" + Towards ") (" + Entity.getYaw(getPlayerEnt()) + " / " + Entity.getPitch(getPlayerEnt()) + ")");
+	textFacing.setText("Facing: " + Compass + " (" + Towards + ") (" + Entity.getYaw(getPlayerEnt()) + " / " + Entity.getPitch(getPlayerEnt()) + ")");
 	textBiome.setText("Biome: " + Level.getBiomeName(Player.getX(), Player.getY(), Player.getZ()));
 	textLight.setText("Light: " + Level.getBrightness(Player.getX(), Player.getY()-1, Player.getZ()) + "(15 Sky, 0 Block)");
 	textLook.setText("Looking at: " + Player.getPointedBlockX() + " " + Player.getPointedBlockY() + " " + Player.getPointedBlockZ());
