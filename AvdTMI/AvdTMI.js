@@ -1,4 +1,26 @@
 //Main
+/* Testing */
+function MainScreen() {
+    Screen.call(this);
+    
+    this.hdr = null;
+    this.btn = null;
+}
+
+ClassHelper.inherit(MyScreen, Screen);
+
+MyScreen.prototype.init = function() {
+    this.btn = GuiElementFactory.createButton("back", 0, 0, 10, 10);
+    
+    this.pushElement(this.btn);
+    
+    this.hdr = GuiElementFactory.createHeader("TMI");
+    
+    this.pushElement(this.hdr);
+};
+
+Minecraft.setScreen(new MainScreen());
+
 
 //GUIManager
 var ClassHelper = {
